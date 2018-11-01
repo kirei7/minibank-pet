@@ -1,10 +1,12 @@
 package com.vlad.learn.service.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
-public class ClientDto {
+@Builder
+public class AccountDto {
     private String firstName;
     private String lastName;
-    private String passportId;
+    private String phoneNumber;
 }
